@@ -3,17 +3,11 @@
 Your conductor for all things genAI. :magic_wand:
 
 ## Table of Contents
-
-- [Demo](#demo)
+ 
 - [Usage & Installation](#usage--installation)
 - [Components](#components)
 - [Examples](#examples)
 
-## Demo
-
-Please find a video demo for how to get set up and use the library [here](https://6sense-my.sharepoint.com/:v:/p/skyler_dale/EUtvZ6nxLrBBkuLZqfEsKoYB6dRaRXn5dTzmsRvvNZlsMw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nXFITO)
-
-Please find a sample notebook with the examples discussed in the video [here](https://6sense-my.sharepoint.com/:u:/p/skyler_dale/EesMCBG8wyVLgqfxs54Z7q8BEPgSM_fNXGdjUoLF-FgXyQ?e=I2GkPl)
 
 ## Usage & Installation
 
@@ -29,8 +23,6 @@ Before running your code please ensure the following commands are run (note that
 ```
 
 In order to download this package in sagemaker you will need to first clone the magicshop repo in sagemaker.
-
-The steps required to do this are outlined here: https://6sense.atlassian.net/wiki/spaces/datascience/pages/2999615560/Cloning+a+Git+Repo+in+Sagemaker
 
 Once you've completed these steps, you can add the following command to your notebook to install the package: ```!pip install -e <path to maestro folder>``` 
 
