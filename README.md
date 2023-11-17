@@ -1,2 +1,2 @@
-# content_summarization
+# Content Summarization
 Intelligent Content aggregation and summarisation platform
