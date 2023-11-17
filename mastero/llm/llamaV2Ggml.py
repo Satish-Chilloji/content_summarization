@@ -28,8 +28,8 @@ class llamaV2Ggml:
         self.set_model_load_params = {}
         self.set_model_gen_params = {}
 
-    def download_model(self, model_repo='TheBloke/Llama-2-13B-chat-GGML',
-                       model_choice='llama-2-13b-chat.ggmlv3.q6_K.bin', local_download_path='./llama_2_models'):
+    def download_model(self, model_repo='TheBloke/Llama-2-7B-Chat-GGML',
+                       model_choice='llama-2-7b-chat.ggmlv3.q6_K.bin', local_download_path='./llama_2_models'):
         
         # Create the output directory if it doesn't exist
         os.makedirs(os.path.abspath(local_download_path), exist_ok=True)
