@@ -1,6 +1,4 @@
-from huggingface_hub import hf_hub_download
 import re
-from llama_cpp import Llama
 import time
 from prompt_constructor import PromptConstructor
 from llamaV2Ggml import llamaV2Ggml
@@ -19,7 +17,7 @@ def main(input):
                 
                 "answer": "LLMs use deep learning to generate new content and provide a basis to communicate much like humnas."
                 }]
-    instructions = "Please limit your response to one sentence."
+    instructions = "Please limit your response to two sentence."
     pc = PromptConstructor()
     prompt = pc.construct_prompt(question=query, instructions=instructions, data=data, examples=examples)
 
@@ -29,6 +27,11 @@ def main(input):
     return response
 
 if __name__=='__main__':
+    input="""Three senior OpenAI researchers Jakub Pachocki, Aleksander Madry and Szymon Sidor resigned. Three senior OpenAI researchers Jakub Pachocki, Aleksander Madry and Szymon Sidor told associates they have resigned, news agency Reuters reported. 
+    The board of the company behind ChatGPT on Friday fired OpenAI CEO Sam Altman - to many, the human face of generative AI - sending shock waves across the tech industry.
+    OpenAI's chief technology officer Mira Murati will serve as interim CEO, the company said, adding that it will conduct a formal search for a permanent CEO.
+    The announcement also said another OpenAI co-founder and top executive, Greg Brockman, the board’s chairman, would step down from that role but remain at the company, where he serves as president.
+    But later on X, formerly Twitter, Brockman posted a message he sent to OpenAI employees in which he wrote, “based on today’s news, i quit.”"""
     main()
 
 
