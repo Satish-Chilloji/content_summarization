@@ -12,9 +12,9 @@ class llamaV2Ggml:
 
         self.DEFAULT_MODEL_LOAD_PARAMS = {
             'n_ctx': 2048,
-            'n_threads': 8,  # CPU cores
+            'n_threads': 2,  # CPU cores
             'n_batch': 512,  # Should be between 1 and n_ctx, consider the amount of VRAM in your GPU.
-            'n_gpu_layers': 43  # Change this value based on your model and your GPU VRAM pool.
+            'n_gpu_layers': 32  # Change this value based on your model and your GPU VRAM pool.
         }
         self.DEFAULT_MODEL_GEN_INFERENCE = {
             'max_tokens': 1024,

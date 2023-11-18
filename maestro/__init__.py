@@ -1,3 +1,3 @@
-from maestro.prompting.prompt_constructor import PromptConstructor
-from maestro.llm.llamaV2Ggml import llamaV2Ggml
+from prompt_constructor import PromptConstructor
+from llamaV2Ggml import llamaV2Ggml
 from maestro.embeddings.InstructEmbedder import InstructEmbedder
